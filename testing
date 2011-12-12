@@ -1,3 +1,138 @@
-kvkbfvkbedk
-snvklsjvn
-]njsdjkl
+Confidentiality and Security: This e-mail and any associated files transmitted with it are confidential and solely for the intended recipient. If you are not the named addressee, do not disseminate, distribute, copy or alter this e-mail. If you have received this information in error, please notify the sender immediately and delete this communication permanently from your records. Forward-looking Statement: Certain portions of this e-mail or its associated files may contain forward-looking statements that are based on management's expectations, estimates, projections, and assumptions. Warning: UST Global has taken reasonable precaution to ensure no viruses are present in this e-mail. The firm cannot accept responsibility for any loss or damage arising from the use of this e-mail or attachments.
+
+ 
+
+ 
+
+From: Syam Jayan (UST, IND)
+Sent: Monday, December 05, 2011 5:42 PM
+To: Nabeel Mattara (UST, IND)
+Cc: Anish Kthomas (UST, IND); Durga Padinjaraveettil (UST, IND); Arun Kumar Appukuttan Pillai (UST, IND); Meble Kalampukat (UST, IND); Bibin Bhanu (UST, IND); Nalini Mathusoothanan (UST, IND)
+Subject: RE: BOOTS : CrossDisk Backup Project - DOS Testing Feasibility Analysis
+
+ 
+
+Set System Time and Date Command
+
+This function enables an application to set the system-wide date and time. Changes made using this
+
+function are broadcast to all controllers and all terminals within the store system.
+
+Format
+
+ADXCS80L i
+
+Where:
+
+i = RCP STATUS file reset indicator, BACKGRND, or blank.
+
+Y = Reset the RCP STATUS file and write output there.
+
+N = Do not reset RCP STATUS file but write output there.
+
+BACKGRND
+
+Running in background (no output).
+
+"blank"
+
+Running in foreground (Command Mode) with output to the console.
+
+command
+
+One or more of the following separated by spaces:
+
++1 Increment the current time by one hour.
+
+-1 Decrease the current time by one hour.
+
+-B Broadcast current time without altering.
+
+-Q No output (quiet mode).
+
+-T HHMMSS
+
+Change the current time to HHMMSS.
+
+-D YYMMDD
+
+Change the date to YYMMDD.
+
+Note: This comment will run only on the master controller if on a multiple controller network. Some
+
+commands are mutually exclusive (+1, -1, -B, -T) and only the last command is recognized. You
+
+must set the time if you set the date (that is, -D requires the -T). The order of the commands is not
+
+important. All of the commands implicitly broadcast their changes; you do not need to manually
+
+broadcast the time after making a change. You should use +1/-1 wherever possible to avoid
+
+inherent delays with setting the time directly. The system date and time can also be set using the
+
+system functions menu option. See the IBM 4690 OS: User's Guide for details on using this method.
+
+ 
+
+From: Syam Jayan (UST, IND)
+Sent: Monday, December 05, 2011 3:52 PM
+To: Syam Jayan (UST, IND); Nabeel Mattara (UST, IND)
+Cc: Anish Kthomas (UST, IND); Durga Padinjaraveettil (UST, IND); Arun Kumar Appukuttan Pillai (UST, IND); Meble Kalampukat (UST, IND); Bibin Bhanu (UST, IND)
+Subject: RE: BOOTS : CrossDisk Backup Project - DOS Testing Feasibility Analysis
+
+ 
+
+Few more reference docs.
+
+ftp://ftp.software.ibm.com/software/retail/pubs/sw/opsys/4690/ver6r2/haj0_4690_v6r2_mg_mst.pdf
+
+ftp://ftp.software.ibm.com/software/retail/pubs/sw/opsys/4690/ver6r2/hal0_4690_v6r2_cpr_mst.pdf
+
+
+From: Syam Jayan (UST, IND)
+Sent: Monday, December 05, 2011 1:08 PM
+To: Nabeel Mattara (UST, IND)
+Cc: Anish Kthomas (UST, IND); Durga Padinjaraveettil (UST, IND); Arun Kumar Appukuttan Pillai (UST, IND); Meble Kalampukat (UST, IND); Bibin Bhanu (UST, IND)
+Subject: RE: BOOTS : CrossDisk Backup Project - DOS Testing Feasibility Analysis
+
+ 
+
+Hi Nabeel,
+
+PFA the sheet with my comments.
+
+ 
+
+Refer 4690 user guide for the commands available in controller. You can refer from chapter 5 onwards.
+
+ftp://ftp.software.ibm.com/software/retail/pubs/sw/opsys/4690/ver5r2/bsf1_UG_mst.pdf
+
+ 
+
+Thanks & Regards,
+
+Syam Jayan
+
+From: Nabeel Mattara (UST, IND)
+Sent: Monday, December 05, 2011 12:04 PM
+To: Syam Jayan (UST, IND)
+Cc: Anish Kthomas (UST, IND); Durga Padinjaraveettil (UST, IND)
+Subject: BOOTS : CrossDisk Backup Project - DOS Testing Feasibility Analysis
+
+ 
+
+Hi Syam
+
+ 
+
+  Subsequent to going through the Design and SUTP docs , I have a preliminary set of questions with regard to testing the updated the CrossDisk Backup application using DOS batch programs.
+
+ 
+
+   Please let me know if we can discuss the attached questionnaire at a good time today afternoon?
+
+ 
+
+Regards
+
+
